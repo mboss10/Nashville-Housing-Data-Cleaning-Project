@@ -4,7 +4,8 @@
 This project focuses on cleaning and preparing a Nashville housing dataset using SQL. The goal is to transform raw data into a more usable format for analysis, demonstrating various data cleaning techniques.
 
 ## Dataset
-The dataset contains information about housing sales in Nashville, including details such as sale date, property address, sale price, and more.
+The dataset contains information about housing sales in Nashville, including details such as sale date, property address, sale price, and more.  
+I imported the data into a table called `Nashville_Housing` on my local machine Postgres DB.
 
 ## Cleaning Process
 
