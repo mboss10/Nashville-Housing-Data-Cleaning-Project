@@ -14,6 +14,7 @@ I imported the data into a table called `Nashville_Housing` on my local machine 
 
 ### 1. Data Validation
 - Verified the correct number of rows (56,477) were imported from the source file.
+<img src="./images/TotalCount.png" width="600px"></img>"
 - Performed an initial check of the data by selecting the first 100 rows.
 
 ### 2. Standardizing Date Format
