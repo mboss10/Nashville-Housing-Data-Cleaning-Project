@@ -32,9 +32,52 @@ select * from "Nashville_Housing" nh  limit 100
 ### 2. Standardizing Date Format
 - Converted the `SaleDate` column from varchar to date format.
 
+```
+alter table "Nashville_Housing" 
+alter column "SaleDate" type date using to_date("SaleDate", 'dd-mm-yyyy')
+```
+
+<img src="./images/UpdateSaleDateToDateFormat.png"></img>
+
 ### 3. Handling Missing Property Addresses
 - Identified records with empty `PropertyAddress` fields.
+
+```
+with cte_id_for_address_empty as (
+	select 
+		nh."ParcelID"
+	from
+		"Nashville_Housing" nh 
+	where 
+	"PropertyAddress" = ''
+)
+select	
+	*
+from 
+	"Nashville_Housing" nh
+inner join
+	cte_id_for_address_empty cte on nh."ParcelID" = cte."ParcelID"
+order by 
+	nh."ParcelID"
+```
+
+<img src="./images/cteAddressEmpty.png"></img>
+  
 - Populated missing addresses using data from records with the same `ParcelID`.
+
+```
+update "Nashville_Housing" nh
+set "PropertyAddress" = nh2."PropertyAddress" 
+from
+	"Nashville_Housing" nh2 
+where  
+	nh."ParcelID" = nh2."ParcelID" 
+	and nh."UniqueID " <> nh2."UniqueID " 
+	and nh."PropertyAddress" = ''
+```
+
+<img src="./images/UpdateSaleDateToDateFormat.png"></img>
+
 
 ### 4. Breaking Out Address Information
 - Split `PropertyAddress` into separate columns for address and city.
