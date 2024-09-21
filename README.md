@@ -1,5 +1,3 @@
-<img width="1044" alt="ViewResults" src="https://github.com/user-attachments/assets/656f8e9e-c0aa-4f69-90aa-b4a3b6271ea8"># Nashville Housing Data Cleaning Project
-
 ## Overview
 This project focuses on cleaning and preparing a Nashville housing dataset using SQL. The goal is to transform raw data into a more usable format for analysis, demonstrating various data cleaning techniques.  
 The list of all SQL queries used for this project can be found [here](https://github.com/mboss10/Nashville-Housing-Data-Cleaning-Project/blob/main/output%20files/Nashville_housing_cleaning.sql)
