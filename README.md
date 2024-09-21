@@ -1,10 +1,13 @@
 # Nashville Housing Data Cleaning Project
 
 ## Overview
-This project focuses on cleaning and preparing a Nashville housing dataset using SQL. The goal is to transform raw data into a more usable format for analysis, demonstrating various data cleaning techniques.
+This project focuses on cleaning and preparing a Nashville housing dataset using SQL. The goal is to transform raw data into a more usable format for analysis, demonstrating various data cleaning techniques.  
+The list of all SQL queries used for this project can be found [here](https://github.com/mboss10/Nashville-Housing-Data-Cleaning-Project/blob/main/output%20files/Nashville_housing_cleaning.sql)
 
 ## Dataset
 The dataset contains information about housing sales in Nashville, including details such as sale date, property address, sale price, and more.  
+The dataset file can be found [here](https://github.com/mboss10/Nashville-Housing-Data-Cleaning-Project/blob/main/sources/Nashville%20Housing%20Data%20for%20Data%20Cleaning%20(reuploaded).csv)
+
 I imported the data into a table called `Nashville_Housing` on my local machine Postgres DB.
 
 ## Cleaning Process
