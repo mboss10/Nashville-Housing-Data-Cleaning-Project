@@ -23,6 +23,12 @@ select count(*) from "Nashville_Housing" nh
 
 - Performed an initial check of the data by selecting the first 100 rows.
 
+```
+select * from "Nashville_Housing" nh  limit 100
+```
+
+<img src="./images/InitialCheck.png"></img>
+
 ### 2. Standardizing Date Format
 - Converted the `SaleDate` column from varchar to date format.
 
